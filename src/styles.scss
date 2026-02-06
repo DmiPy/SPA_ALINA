@@ -1,1 +1,162 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --brand-yellow: #A17743;
+}
+
+.brand-list li::marker {
+  color: var(--brand-yellow);
+}
+
+section[id], div[id] {
+  scroll-margin-top: 100px;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url("./assets/fonts/Satoshi/Satoshi-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+.brand-yellow {
+  color: var(--brand-yellow); 
+  font-weight: 600;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-top: 10px;
+}
+
+.view-more-btn {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 14px;
+  letter-spacing: 0.5px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: 120%;
+    height: 10px;
+
+    border-bottom: 1.5px solid #6c757d;
+    border-radius: 0 0 100% 100%;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+
+.contact-img {
+  object-fit: cover;
+  display: block;
+  max-height: 900px;
+}
+
+@media (max-width: 991.98px) {
+  .contact-img {
+    max-height: 420px;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-divider {
+  width: 100%;
+  max-width: 1800px;
+  height: 2px;
+  background-color: #787979; 
+  margin: 0 auto;
+  opacity: 0.4;
+}
+
+.accordion-collapse-custom {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease-out;
+  overflow: hidden;
+}
+
+.accordion-collapse-custom.expanded {
+  grid-template-rows: 1fr;
+}
+
+.accordion-content {
+  min-height: 0;
+}
+
+.transition-navbar {
+  transition: background-color 0.2s ease, backdrop-filter 0.2s ease;
+}
+
+.navbar {
+  background-color: white !important;
+  backdrop-filter: none;
+}
+
+.navbar.navbar-transparent {
+  background-color: rgba(255, 255, 255, 0.5) !important; 
+  backdrop-filter: blur(10px); 
+}
+
+.navbar.navbar-transparent {
+  box-shadow: none !important;
+}
+
+footer a {
+  transition: background-color 0.2s ease;
+}
+
+footer a {
+  transition: background-color 0.2s ease;
+}
+
+.brand span:first-child {
+  color: #000;
+}
+      
+.brand span:last-child {
+  color: #A17743;
+}
+
+      
+.hero img {  
+  width: 100%;
+  height: auto;
+  display: block; 
+  object-fit: cover;
+}
+
+main {
+ margin-top: 120px;
+}
+
+.contact-container {
+  min-height: 300px;
+  transition: all 0.3s ease;
+}
+
+
+.animate__fadeIn {
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
