@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npx angular-cli-ghpages --dir=dist/spa_alina/browser --message='Deploy via angular-cli-ghpages'"
   },
   "private": true,
   "dependencies": {
