@@ -97,6 +97,7 @@ export class AppComponent {
   reviews = [
     {
       source: "Teatro Massimo Bellini Di Catania, Italy 2024",
+      url: "https://theclovesmagazine.it/music-theater/rigoletto-un-viaggio-nella-tragedia-verdiana-al-massimo-di-catania.html?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaAP9fNVleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadDj7Bh3tcGRhKqIYa_voGlboS9fi8jBRw1JmSQd5Ss2MatOotMrsHiqHJurw_aem_05hsE_vUuNSxX55SYOcI1Q",
       textDesktop: `“Alina Tkachuk, nel ruolo di Gilda, si è mostrata una splendida interprete, che ha affrontato la sua parte 
       con delicatezza e purezza sonora, catturando il pubblico. La sua voce, fresca e cristallina, ha dato vita a momenti 
       toccanti, culminando in un “Caro nome” che ha evidenziato non solo la sua tecnica sopraffina, ma anche la sua capacità 
@@ -109,6 +110,7 @@ export class AppComponent {
     },
     {
       source: "Teatro Massimo Bellini Di Catania, Italy 2025",
+      url: "https://www.unictmagazine.unict.it/ombre-e-luci-partitura-le-armonie-spezzate-e-ritrovate-del-novecento?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaAP9fPFleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacjdvvonJjkPZZQ0_lMZhLcKt9auNuC8ziAUfKUuVMwOnblww5xrGAsw7rDYw_aem_4Wl6rmLJT11fegl51x2oLw",
       textDesktop: `"L'opera, resa attuale e godibile anche per il pubblico contemporaneo, ha brillato per la freschezza della 
       regia musicale e l'interpretazione vivace di Alina Tkachuk, soprano di grande temperamento, che ha incantato il 
       pubblico con una vocalità calda e raffinata.."`,
@@ -118,6 +120,7 @@ export class AppComponent {
     },
     {
       source: "Puginci Festival - Torre Del Lago, Italy 2025",
+      url: "https://www.opera-online.com/de/columns/helmutpitsch/festival-puccini-nostalgie-in-romantischen-setting?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaAP9fQdleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaejElkvgcmGsGBUdnM_L6BUflRRqCUWYTFe4u66_ArgK7CyE_RHjd2Y_HJtgw_aem_addWUAQPH_UcdBIwtEC4vw",
       textDesktop: `""Die Liu von Alina Tkachuk
       kann an diesem Abend am meisten überzeugen. Schön führt die junge Ukrainerin die Melodie ihrer großen Liebesarie, 
       gefühlvoll drückt sie ihre Stimmungen aus, die sie bestens abgestuft in ihre Stimme überträgt.

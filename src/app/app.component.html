@@ -293,7 +293,6 @@
               <button class="btn w-100 text-start p-0 shadow-none" type="button" (click)="toggle('accordion01')">
                 <div class="d-flex align-items-start">
 
-                  <!-- номер -->
                   <div class="fw-bold brand-yellow me-3" style="min-width: 28px;">
                     01
                   </div>
@@ -327,19 +326,13 @@
               </div>
             </div>
 
-          </div>
-
-          <!-- ===== FUTURE ===== -->
-          <div class="mt-4">
-            <div class="fw-bold brand-yellow mb-2">Future</div>
-
-            <!-- item FUTURE 01 -->
+            <!-- item PAST 02 -->
             <div class="py-3">
               <button class="btn w-100 text-start p-0 shadow-none" type="button" (click)="toggle('accordion02')">
                 <div class="d-flex align-items-start">
 
                   <div class="fw-bold brand-yellow me-3" style="min-width: 28px;">
-                    01
+                    02
                   </div>
 
                   <div class="flex-grow-1">
@@ -371,13 +364,19 @@
               </div>
             </div>
 
-            <!-- item FUTURE 02 -->
+          </div>
+
+          <!-- ===== FUTURE ===== -->
+          <div class="mt-4">
+            <div class="fw-bold brand-yellow mb-2">Future</div>
+
+            <!-- item FUTURE 01 -->
             <div class="py-3">
               <button class="btn w-100 text-start p-0 shadow-none" type="button" (click)="toggle('accordion03')">
                 <div class="d-flex align-items-start">
 
                   <div class="fw-bold brand-yellow me-3" style="min-width: 28px;">
-                    02
+                    01
                   </div>
 
                   <div class="flex-grow-1">
@@ -832,10 +831,14 @@
             <div class="p-4 p-md-5 text-center">
 
               <h2>
-                <p class="fw-semibold mb-4 border-bottom pb-2 d-inline-block"
-                  style="border-color: var(--brand-yellow); color: var(--brand-yellow);">
+                <a 
+                  class="press-link fw-semibold pb-2 d-inline-block"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  [href]="reviews[currentReview].url"
+                >
                   {{ reviews[currentReview].source }}
-                </p>
+                </a>
               </h2>
 
               <p class="fs-5 lh-lg mt-4">
