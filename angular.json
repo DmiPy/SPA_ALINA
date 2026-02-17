@@ -30,6 +30,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/fonts",
+              "src/sitemap.xml",
               "src/redirections"
             ],
             "styles": [
@@ -94,6 +95,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/sitemap.xml",
               "src/_redirects"
             ],
             "styles": [
