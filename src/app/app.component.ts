@@ -42,6 +42,7 @@ export class AppComponent {
     accordion01: false,
     accordion02: false,
     accordion03: false,
+    accordion04: false,
     more_photos: false,
 
   };

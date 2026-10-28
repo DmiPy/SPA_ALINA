@@ -274,6 +274,58 @@
             </div>
           </div>
 
+
+          <!-- ACCORDION ITEM 04: Rigoletto in Rostock -->
+          <div class="section-divider mt-4"></div>
+
+          <div class="py-4">
+            <button
+              class="btn w-100 text-start p-0 shadow-none"
+              type="button"
+              (click)="toggle('accordion04')"
+              [attr.aria-expanded]="!!expanded.accordion04">
+
+              <h3 class="mb-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold me-3 brand-yellow">04</span>
+                    Gilda from opera "Rigoletto" G. Verdi
+                  </div>
+
+                  <span class="fs-4 fw-bold">
+                    {{ expanded.accordion04 ? '−' : '+' }}
+                  </span>
+                </div>
+              </h3>
+            </button>
+
+            <div
+              class="accordion-collapse-custom mt-3"
+              [class.expanded]="expanded.accordion04">
+
+              <div class="accordion-content">
+                <div class="d-flex justify-content-between align-items-start gap-4 pb-3">
+                  <h4>
+                    <ul class="small mb-0 brand-list">
+                      <li>
+                        <a
+                          href="https://www.volkstheater-rostock.de/spielplan/a-z/rigoletto/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-dark">
+                          Volkstheater Rostock, Germany
+                        </a>
+                      </li>
+                      <li>November 15, 2026</li>
+                      <li>December 4 &amp; 12, 2026</li>
+                      <li>January 24, 2027</li>
+                    </ul>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -365,6 +417,52 @@
               </div>
             </div>
 
+            <!-- item PAST 03 -->
+            <div class="py-3">
+              <button
+                class="btn w-100 text-start p-0 shadow-none"
+                type="button"
+                (click)="toggle('accordion03')">
+
+                <div class="d-flex align-items-start">
+                  <div class="fw-bold brand-yellow me-3" style="min-width: 28px;">
+                    03
+                  </div>
+
+                  <div class="flex-grow-1">
+                    <div class="fw-medium">
+                      Gilda from opera "Rigoletto" G. Verdi
+                    </div>
+                    <hr class="my-2" style="opacity: .2;">
+                  </div>
+
+                  <div class="fs-4 fw-bold ms-3">
+                    {{ expanded.accordion03 ? '×' : '+' }}
+                  </div>
+                </div>
+              </button>
+
+              <div
+                class="accordion-collapse-custom mt-2"
+                [class.expanded]="expanded.accordion03">
+
+                <div class="accordion-content">
+                  <div class="d-flex justify-content-between align-items-start gap-3">
+                    <ul class="small mb-0 brand-list">
+                      <li>Beijing, China</li>
+                      <li>August 24 – September 20, 2026</li>
+                    </ul>
+
+                    <img
+                      src="assets/season_accordion_03.jpg"
+                      class="img-fluid rounded"
+                      style="max-width: 140px; height: 100px; object-fit: cover;"
+                      alt="Alina Tkachuk – Beijing">
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <!-- ===== FUTURE ===== -->
@@ -373,37 +471,62 @@
 
             <!-- item FUTURE 01 -->
             <div class="py-3">
-              <button class="btn w-100 text-start p-0 shadow-none" type="button" (click)="toggle('accordion03')">
-                <div class="d-flex align-items-start">
+              <button
+                class="btn w-100 text-start p-0 shadow-none"
+                type="button"
+                (click)="toggle('accordion04')">
 
+                <div class="d-flex align-items-start">
                   <div class="fw-bold brand-yellow me-3" style="min-width: 28px;">
                     01
                   </div>
 
                   <div class="flex-grow-1">
                     <div class="fw-medium">
-                      Gilda from opera "Rigoletto" G.Verdi
+                      <a
+                        href="https://www.volkstheater-rostock.de/spielplan/a-z/rigoletto/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-dark text-decoration-none"
+                        (click)="$event.stopPropagation()">
+                        Gilda from opera "Rigoletto" G. Verdi
+                      </a>
                     </div>
                     <hr class="my-2" style="opacity: .2;">
                   </div>
 
                   <div class="fs-4 fw-bold ms-3">
-                    {{ expanded.accordion02 ? '×' : '+' }}
+                    {{ expanded.accordion04 ? '×' : '+' }}
                   </div>
-
                 </div>
               </button>
 
-              <div class="accordion-collapse-custom mt-2" [class.expanded]="expanded.accordion03">
+              <div
+                class="accordion-collapse-custom mt-2"
+                [class.expanded]="expanded.accordion04">
+
                 <div class="accordion-content">
                   <div class="d-flex justify-content-between align-items-start gap-3">
                     <ul class="small mb-0 brand-list">
-                      <li>Beijing, China</li>
-                      <li>August—2026</li>
+                      <li>
+                        <a
+                          href="https://www.volkstheater-rostock.de/spielplan/a-z/rigoletto/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-dark">
+                          Volkstheater Rostock, Germany
+                        </a>
+                      </li>
+                      <li>November 15, 2026</li>
+                      <li>December 4 &amp; 12, 2026</li>
+                      <li>January 24, 2027</li>
                     </ul>
 
-                    <img src="assets/season_accordion_03.jpg" class="img-fluid rounded"
-                      style="max-width: 140px; height: 100px; object-fit: cover;" alt="Alina Tkachuk – Beijing" />
+                    <img
+                      src="assets/season_accordion_03.jpg"
+                      class="img-fluid rounded"
+                      style="max-width: 140px; height: 100px; object-fit: cover;"
+                      alt="Alina Tkachuk – Rigoletto">
                   </div>
                 </div>
               </div>
