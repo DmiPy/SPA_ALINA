@@ -23,7 +23,7 @@
         </h2>
       </a>
 
-      <button class="navbar-toggler" type="button" (click)="toggleMenu()" [attr.aria-expanded]="!isMenuCollapsed">
+      <button title="expand" class="navbar-toggler" type="button" (click)="toggleMenu()" [attr.aria-expanded]="!isMenuCollapsed">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -569,7 +569,7 @@
               </h3>
 
               <p class="small fw-bold mb-5" style="color: var(--brand-yellow); letter-spacing: 0.5px;">
-                Puccini Festival – Torre del Lago, Italy 2025
+                Puccini Festival – Torre del Lago, Italy
               </p>
 
               <p class="mb-0 d-none d-md-block fs-5 text-muted" style="line-height: 1.6;">
@@ -617,7 +617,7 @@
               </h3>
 
               <p class="small fw-bold mb-5" style="color: var(--brand-yellow); letter-spacing: 0.5px;">
-                Teatro Coccia, Novara 2025
+                Teatro Coccia, Novara
               </p>
 
               <p class="mb-0 d-none d-md-block fs-5 text-muted" style="line-height: 1.6;">
@@ -663,7 +663,7 @@
               </h3>
 
               <p class="small fw-bold mb-5" style="color: var(--brand-yellow); letter-spacing: 0.5px;">
-                Teatro Massimo Bellini, Italy 2024
+                Teatro Massimo Bellini, Italy
               </p>
 
               <p class="mb-0 d-none d-md-block fs-5 text-muted" style="line-height: 1.6;">
@@ -708,7 +708,7 @@
           <div class="position-relative">
 
             <!-- VIDEO PREVIEW -->
-            <a role="button" (click)="openVideo('https://www.youtube.com/embed/2EiDaO0zyYE')"
+            <a role="button" (click)="openVideo('https://www.youtube.com/embed/xjJaMwTqFyw?si=jE1_7IkLzUfkKKw4')"
               class="d-block position-relative">
 
               <img src="assets/video_01.jpg" class="img-fluid w-100 shadow" alt="Alina Tkachuk – Puccini Video"
@@ -732,12 +732,12 @@
                   border: 1px solid rgba(0,0,0,0.05);
                 ">
               <div class="fw-bold mb-1">
-                Giacomo Puccini – Turandot, Act III<br>
-                Liù's Aria: “Tanto amore segreto”
+				Violetta's aria from opera G.Verdi<br>
+				La Traviata (Estrano..Sempre libera)
               </div>
 
               <div class="small fw-bold" style="color: var(--brand-yellow);">
-                Puccini Festival – Torre del Lago, Italy 2025
+                Puccini Festival – Torre del Lago, Italy
               </div>
             </div>
 
@@ -784,7 +784,7 @@
               </div>
 
               <div class="small fw-bold" style="color: var(--brand-yellow);">
-                Teatro Coccia, Novata 2025
+                Teatro Coccia, Novara
               </div>
             </div>
 
@@ -831,7 +831,7 @@
               </div>
 
               <div class="small fw-bold" style="color: var(--brand-yellow);">
-                Italy 2024
+                Italy
               </div>
             </div>
 
@@ -1024,23 +1024,32 @@
                   </div>
                 </div>
 
-                <div class="mb-3">
-                  <label class="form-label brand-yellow">Message</label>
-                  <textarea name="message" rows="5" class="form-control" required ngModel #msgC="ngModel"></textarea>
-                </div>
+				<div class="mb-3">
+					<label for="messageField" class="form-label brand-yellow">Message</label>
+					<textarea
+						id="messageField"
+						name="message"
+						type="text"
+						rows="5"
+						class="form-control"
+						required
+						ngModel
+						#msgC="ngModel">
+					</textarea>
+				</div>
 
                 <div class="form-check mb-3 d-flex align-items-center">
-                  <input 
-                    class="form-check-input mt-0 me-2" 
-                    type="checkbox" 
-                    name="privacy" 
-                    id="privacy" 
-                    required 
-                    ngModel 
+                  <input
+                    class="form-check-input mt-0 me-2"
+                    type="checkbox"
+                    name="privacy"
+                    id="privacy"
+                    required
+                    ngModel
                     #checkC="ngModel"
                   >
                   <label class="form-check-label small text-muted" for="privacy" style="line-height: 1;">
-                    I consent to the 
+                    I consent to the
                     <a class="brand-yellow text-decoration-underline" data-bs-toggle="modal" data-bs-target="#privacyModal" style="cursor: pointer;">
                       Privacy Policy
                     </a>
